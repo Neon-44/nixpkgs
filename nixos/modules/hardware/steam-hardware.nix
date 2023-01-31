@@ -13,13 +13,14 @@ in
     enable = mkOption {
       type = types.bool;
       default = false;
-      description = lib.mdDoc "Enable udev rules for Steam hardware such as the Steam Controller, other supported controllers and the HTC Vive";
+      # description = lib.mdDoc "Enable udev rules for Steam hardware such as the Steam Controller, other supported controllers and the HTC Vive";
+      description = lib.mdDoc "Enable the Steam-Device udev rules for Hardware such ass all Steam/Valve hardware as well as selected third party controllers";
     };
   };
 
   config = mkIf cfg.enable {
     services.udev.packages = [
-      pkgs.steamPackages.steam
+      pkgs.steam-devices
     ];
 
     # The uinput module needs to be loaded in order to trigger the udev rules
