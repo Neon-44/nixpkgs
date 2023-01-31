@@ -38125,4 +38125,6 @@ with pkgs;
   aitrack = libsForQt5.callPackage ../applications/misc/aitrack { };
 
   widevine-cdm = callPackage ../applications/networking/browsers/misc/widevine-cdm.nix { };
+
+  steam-devices = callPackage ../tools/games/steam-devices { };
 }
