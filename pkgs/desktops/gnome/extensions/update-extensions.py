@@ -301,3 +301,5 @@ if __name__ == "__main__":
     logging.info(
         "Done. Writing name collisions to collisions.json (please check manually)"
     )
+
+print('\n\nplease name the commit "gnomeExtensions: auto-update". thanks for being a Part of the NixOS community.\n\n')

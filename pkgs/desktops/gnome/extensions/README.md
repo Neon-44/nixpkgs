@@ -12,6 +12,7 @@ For everyday updates,
 
 1. Run `update-extensions.py`.
 2. Update `extensionRenames.nix` according to the comment at the top.
+3. name the commit: 'gnomeExtensions: auto-update' 
 
 For GNOME updates,
 
